@@ -1,31 +1,37 @@
 import './App.css';
+
+//Importing components
 import Form from './components/Form/form';
 import Todolist from './components/Todolist/todolist';
 
+//Hooks
 import {useState,useEffect} from 'react';
+
+// My constant local storage key 
 const STORAGEKEYOFTODOS = "myTodos";
 
 function App() {
 
+  //States
   const [inputText,setInputText] = useState("");
   const [todos,setTodos] = useState([]);
   const [status,setStatus] = useState("all");
   const [filteredTodos,setFilteredTodos] = useState([]);
 
-
+  //Events
+  
+    //It is called only once when app is rendered 
+    //      for taking existing todos from local storage
+    //          and showing in UI
   useEffect(() => {
-    console.log("storage effect")
     getTodosFromLocalStorage();
   }, [])
 
   useEffect(() => {
-    console.log("effect1")
       if(status === "completed"){
-        console.log("status completed")
         setFilteredTodos(todos.filter((todo) => todo.isCompleted === true))
       }
       else if(status === "uncompleted"){
-        console.log("status UNNcompleted")
         setFilteredTodos(todos.filter((todo) => todo.isCompleted === false))
       }
       else{
@@ -35,15 +41,11 @@ function App() {
   },[todos])
 
   useEffect(() => {
-    console.log("effect2")
     switch (status) {
         case "completed":
-          console.log("status completed")
           setFilteredTodos(todos.filter((todo) => todo.isCompleted === true))
           break;
         case "uncompleted":
-          console.log("status UNNcompleted")
-          //console.log(todos.filter((todo) => todo.isCompleted === false))
           setFilteredTodos(todos.filter((todo) => todo.isCompleted === false))
           break;
         default:
@@ -52,9 +54,8 @@ function App() {
       }
   },[status])
 
- 
 
-
+  
   const saveTodosToLocalStorage = () => {
     localStorage.setItem(STORAGEKEYOFTODOS,JSON.stringify(todos))
   }
@@ -72,7 +73,7 @@ function App() {
     <div className="App">
       
       <header >
-        <h1>Emre KURTAR's todo list</h1>
+        <h1>Emre KURTAR's To-Do</h1>
         </header>
         <Form
           inputText = {inputText}
