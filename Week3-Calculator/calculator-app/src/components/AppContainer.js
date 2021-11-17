@@ -1,0 +1,33 @@
+import React from "react";
+import { CalcProvider } from "../context/CalContext";
+
+const styles = {
+    appContainer: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "#e5e5e5",
+    },
+    calculatorContainer: {
+      backgroundColor: "#333",
+      width: "20vw",
+      height: "70vw",
+      minWidth: 250,
+      maxWidth: 500,
+      maxHeight: 450,
+    },
+  };
+  
+  const AppContainer = ({ children }) => {
+    return (
+      <CalcProvider>
+      <div style={styles.appContainer}>
+        <div style={styles.calculatorContainer}>{children}</div>
+      </div>
+      </CalcProvider>
+    );
+  };
+  
+  export default AppContainer;
