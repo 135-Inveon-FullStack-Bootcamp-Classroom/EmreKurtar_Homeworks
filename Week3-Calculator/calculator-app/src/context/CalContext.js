@@ -24,6 +24,8 @@ export const CalcProvider = ({ children }) => {
             return false;
     }
 
+    // If the button is number like "1,2,3,5..."
+
     if (isNumber) {
         const lastElementofHistory = history[history.length-2];
         
@@ -47,6 +49,8 @@ export const CalcProvider = ({ children }) => {
             setHistory(history + label)
         }
     }
+
+    // If the button is like "CE,C,<-" for editing  
 
     if(editing){
 
@@ -80,6 +84,8 @@ export const CalcProvider = ({ children }) => {
         }
         
     }
+
+    // If the button is operation like " + - / x² √"
 
     if (operator) {
 
@@ -177,6 +183,8 @@ export const CalcProvider = ({ children }) => {
 
       
     }
+
+    // If the button is "="
 
     if(equal){
         
