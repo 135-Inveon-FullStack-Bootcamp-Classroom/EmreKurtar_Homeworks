@@ -12,16 +12,21 @@ export const CalcProvider = ({ children }) => {
 
     // Button Click Handle
 
-  const handleKeyClick = (isNumber, label, editing,operator) => {
+  const handleKeyClick = (isNumber, label,operator,editing,equal) => {
+      
+    const conditionOflastElementofHistory = () => {
+        const lastElementofHistory = history[history.length-2];
+        if( lastElementofHistory === "+" ||
+            lastElementofHistory === "-" ||
+            lastElementofHistory === "x" ||
+            lastElementofHistory === "/" )  return true;
+
+            return false;
+    }
 
     if (isNumber) {
         const lastElementofHistory = history[history.length-2];
-        const conditionOflastElementofHistory = (
-            lastElementofHistory === "+" ||
-            lastElementofHistory === "-" ||
-            lastElementofHistory === "x" ||
-            lastElementofHistory === "/" 
-            );
+        
 
     // If user enter a number, after input an operation 
     //      set the operation to the "LastOperation" useState hooks.
@@ -29,7 +34,7 @@ export const CalcProvider = ({ children }) => {
     // If there is no operation before the number, take the number and
     //      add the value to the mainText(Number) as a string
 
-        if(conditionOflastElementofHistory){
+        if(conditionOflastElementofHistory()){
             setLastOperation(lastElementofHistory);
             setMainText(label)
             setHistory(history + label)
@@ -47,9 +52,28 @@ export const CalcProvider = ({ children }) => {
 
         switch (label) {
             case "C":
-                setMainText("")
+                setMainText("0")
                 setHistory("")
                 setLastResult(0)
+                return;
+            case "CE":
+                setHistory(history.slice(0,(history.length - mainText.length)))
+                setMainText("0")
+                return;
+            case "<-":
+                if(!conditionOflastElementofHistory()){
+                    if(mainText.length > 1){
+                        setMainText(mainText.slice(0,-1))
+                        setHistory(history.slice(0,-1))
+                    }
+                    else{
+                        setMainText("0")
+                        setHistory(history.slice(0,-1))
+                    }
+                    
+                }
+                
+                
                 return;
             default:
                 break;
@@ -145,11 +169,6 @@ export const CalcProvider = ({ children }) => {
                     setMainText(Number(lastResult) * Number(mainText))
                     setLastOperation(label);
                     break;
-                case "=":
-                    setLastResult(lastResult * Number(mainText))
-                    setMainText(Number(lastResult) * Number(mainText))
-                    setLastOperation(label);
-                    break;
                 
                 default:
                     break;
@@ -157,6 +176,37 @@ export const CalcProvider = ({ children }) => {
         }
 
       
+    }
+
+    if(equal){
+        
+                    setHistory("")
+                    switch (lastOperation) {
+                        case "+":
+                            setLastResult(lastResult + Number(mainText))
+                            setMainText(Number(lastResult) + Number(mainText))
+                            setLastOperation("");
+                            break;
+                        case "-":
+                            setLastResult(lastResult - Number(mainText))
+                            setMainText(Number(lastResult) - Number(mainText))
+                            setLastOperation("");
+                            break;
+                        case "/":
+                            setLastResult(lastResult / Number(mainText))
+                            setMainText(Number(lastResult) / Number(mainText))
+                            setLastOperation("");
+                            break;
+                        case "x":
+                            setLastResult(lastResult * Number(mainText))
+                            setMainText(Number(lastResult) * Number(mainText))
+                            setLastOperation("");
+                            break;    
+                        
+                        default:
+                            break;
+                    }
+                    
     }
 }
   
