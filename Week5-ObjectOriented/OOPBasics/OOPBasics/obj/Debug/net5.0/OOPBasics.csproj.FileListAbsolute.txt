@@ -1,0 +1,16 @@
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\OOPBasics.exe
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\OOPBasics.deps.json
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\OOPBasics.runtimeconfig.json
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\OOPBasics.runtimeconfig.dev.json
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\OOPBasics.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\ref\OOPBasics.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\bin\Debug\net5.0\OOPBasics.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.csprojAssemblyReference.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.AssemblyInfoInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.AssemblyInfo.cs
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.csproj.CoreCompileInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\ref\OOPBasics.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week5-ObjectOriented\OOPBasics\OOPBasics\obj\Debug\net5.0\OOPBasics.genruntimeconfig.cache
