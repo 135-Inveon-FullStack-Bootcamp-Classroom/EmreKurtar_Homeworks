@@ -1,0 +1,12 @@
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Service.deps.json
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\ref\MovieApp.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Service.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.csprojAssemblyReference.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.AssemblyInfoInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.AssemblyInfo.cs
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.csproj.CoreCompileInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\ref\MovieApp.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.pdb
