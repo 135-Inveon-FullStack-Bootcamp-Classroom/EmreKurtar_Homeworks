@@ -6,7 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MovieApp.Core.Interfaces.UnitOfWork;
 using MovieApp.Data;
+using MovieApp.Data.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,8 +32,12 @@ namespace MovieApp.API
             services.AddControllers();
             services.AddDbContext<MovieDBContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionString:MyConn"]);
+                options.UseSqlServer(Configuration["ConnectionStrings:MyConn"].ToString(),o => {
+                    o.MigrationsAssembly("MovieApp.Data");
+                });
             });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             
             
             
