@@ -10,3 +10,8 @@ C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Servi
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\ref\MovieApp.Service.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Core.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Core.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\obj\Debug\net5.0\MovieApp.Service.csproj.CopyComplete
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Data.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week6-Movies\MovieApp\MovieApp.Service\bin\Debug\net5.0\MovieApp.Data.pdb

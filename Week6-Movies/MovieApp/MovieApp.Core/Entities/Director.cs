@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace MovieApp.Core.Entities
 {
-    public class Director
+    public class Director : BaseEntity
     {
-        public int ID { get; set; }
         public string FullName { get; set; }
 
         public ICollection<Movie> Movies { get; set; }

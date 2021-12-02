@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace MovieApp.Core.Entities
 {
-    public class Movie
+    public class Movie : BaseEntity
     {
-        public int ID { get; set; }
         public string Name { get; set; }
         public float Rating { get; set; }
         public Director Director { get; set; }

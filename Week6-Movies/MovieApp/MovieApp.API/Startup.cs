@@ -9,6 +9,10 @@ using Microsoft.Extensions.Logging;
 using MovieApp.Core.Interfaces.UnitOfWork;
 using MovieApp.Data;
 using MovieApp.Data.UnitOfWork;
+using MovieApp.Service.Implementations;
+using MovieApp.Service.Infrastructure;
+using MovieApp.Service.Interfaces;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +33,7 @@ namespace MovieApp.API
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             services.AddDbContext<MovieDBContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:MyConn"].ToString(),o => {
@@ -38,9 +42,10 @@ namespace MovieApp.API
             });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
-            
-            
+            //services.AddTransient<IActorService, ActorService>();
+            services.AddServices();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

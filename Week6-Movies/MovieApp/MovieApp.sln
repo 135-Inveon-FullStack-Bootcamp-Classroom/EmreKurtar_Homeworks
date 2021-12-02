@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.API", "MovieApp.API\MovieApp.API.csproj", "{77FCEE7A-277E-4817-B166-FCC9DA2311EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieApp.API", "MovieApp.API\MovieApp.API.csproj", "{77FCEE7A-277E-4817-B166-FCC9DA2311EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Data", "MovieApp.Data\MovieApp.Data.csproj", "{1DA1D6D8-606B-46C1-8292-010267ACFA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieApp.Data", "MovieApp.Data\MovieApp.Data.csproj", "{1DA1D6D8-606B-46C1-8292-010267ACFA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Core", "MovieApp.Core\MovieApp.Core.csproj", "{2478C0BD-C4EE-48D6-8174-EFC83CFBDD65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieApp.Core", "MovieApp.Core\MovieApp.Core.csproj", "{2478C0BD-C4EE-48D6-8174-EFC83CFBDD65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Service", "MovieApp.Service\MovieApp.Service.csproj", "{DC6E211F-0513-4B00-92CD-80DD5B8DD6D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieApp.Service", "MovieApp.Service\MovieApp.Service.csproj", "{DC6E211F-0513-4B00-92CD-80DD5B8DD6D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

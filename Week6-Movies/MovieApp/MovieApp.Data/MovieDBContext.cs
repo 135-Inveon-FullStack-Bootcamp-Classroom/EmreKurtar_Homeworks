@@ -13,7 +13,7 @@ namespace MovieApp.Data
     {
         public MovieDBContext(DbContextOptions<MovieDBContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<Movie> Movies { get; set; }
@@ -28,5 +28,7 @@ namespace MovieApp.Data
             modelBuilder.ApplyConfiguration(new CommentConfiguration());
             modelBuilder.ApplyConfiguration(new DirectorConfiguration());
         }
+
+        
     }
 }

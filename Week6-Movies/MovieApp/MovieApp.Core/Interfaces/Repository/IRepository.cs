@@ -11,7 +11,7 @@ namespace MovieApp.Core.Interfaces.Repository
     {
         Task<TEntity> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsync();
-        IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);
+        IQueryable<TEntity> Get(Expression<Func<TEntity, bool>> predicate);
         Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
 
         Task AddAsync(TEntity entity);

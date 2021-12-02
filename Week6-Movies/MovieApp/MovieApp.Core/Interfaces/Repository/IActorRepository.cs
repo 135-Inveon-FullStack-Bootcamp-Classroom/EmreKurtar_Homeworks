@@ -9,7 +9,6 @@ namespace MovieApp.Core.Interfaces.Repository
 {
     public interface IActorRepository : IRepository<Actor>
     {
-        // You can write specific functions definition about Actor class
-       
+        List<Actor> GetAllWithMovies();
     }
 }

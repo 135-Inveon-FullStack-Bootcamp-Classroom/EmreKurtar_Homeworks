@@ -1,4 +1,5 @@
-﻿using MovieApp.Core.Interfaces.Repository;
+﻿using MovieApp.Core.Entities;
+using MovieApp.Core.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace MovieApp.Core.Interfaces.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        IMovieRepository movieRepository { get; }
+        // Değişiklik
         IActorRepository actorRepository { get; }
-        IDirectorRepository directorRepository { get; }
-        ICommentRepository commentRepository { get; }
+        // Değişiklik
 
+        IRepository<T> GetRepository<T>() where T : BaseEntity;
         Task CommitAsync();
         void Commit();
 

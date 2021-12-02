@@ -53,6 +53,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -244,7 +248,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Allthebest\\Desktop\\InveonHomeworks\\Week6-Movies\\MovieApp\\MovieApp.Core\\MovieApp.Core.csproj": {
+                "projectPath": "C:\\Users\\Allthebest\\Desktop\\InveonHomeworks\\Week6-Movies\\MovieApp\\MovieApp.Core\\MovieApp.Core.csproj"
+              },
+              "C:\\Users\\Allthebest\\Desktop\\InveonHomeworks\\Week6-Movies\\MovieApp\\MovieApp.Data\\MovieApp.Data.csproj": {
+                "projectPath": "C:\\Users\\Allthebest\\Desktop\\InveonHomeworks\\Week6-Movies\\MovieApp\\MovieApp.Data\\MovieApp.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -256,6 +267,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

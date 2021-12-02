@@ -11,11 +11,12 @@ namespace MovieApp.Data.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly MovieDBContext _context;
+        protected readonly DbContext _context;
         private readonly DbSet<TEntity> _dbset;
 
-        public Repository(MovieDBContext context)
+        public Repository(DbContext context)
         {
+            
             _context = context;
             _dbset = _context.Set<TEntity>();
         }
@@ -61,7 +62,7 @@ namespace MovieApp.Data.Repositories
             return entity;
         }
 
-        public IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
+        public IQueryable<TEntity> Get(Expression<Func<TEntity, bool>> predicate)
         {
             return _dbset.Where(predicate);
         }
