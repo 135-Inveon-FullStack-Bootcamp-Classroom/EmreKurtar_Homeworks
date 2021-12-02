@@ -6,7 +6,7 @@
 
 ### Basic knowledge about redux (state-reducer-action-dispatch)
 
-![react-redux2](https://www.hizliresim.com/lpx0zoc)
+![react-redux2](https://i.hizliresim.com/lpx0zoc)
 
 -------------------------------------------
 
