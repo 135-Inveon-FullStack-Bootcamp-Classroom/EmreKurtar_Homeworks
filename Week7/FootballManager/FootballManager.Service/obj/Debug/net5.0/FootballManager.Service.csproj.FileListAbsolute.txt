@@ -1,0 +1,17 @@
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Data.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Entities.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.csprojAssemblyReference.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.AssemblyInfoInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.AssemblyInfo.cs
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Service.deps.json
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\ref\FootballManager.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Service.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Data.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Entities.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.csproj.CoreCompileInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.csproj.CopyComplete
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\ref\FootballManager.Service.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.pdb

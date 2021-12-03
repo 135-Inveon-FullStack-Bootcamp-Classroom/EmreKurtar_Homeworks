@@ -1,0 +1,11 @@
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\bin\Debug\net5.0\FootballManager.Entities.deps.json
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\bin\Debug\net5.0\FootballManager.Entities.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\bin\Debug\net5.0\ref\FootballManager.Entities.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\bin\Debug\net5.0\FootballManager.Entities.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.AssemblyInfoInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.AssemblyInfo.cs
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\ref\FootballManager.Entities.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.pdb
