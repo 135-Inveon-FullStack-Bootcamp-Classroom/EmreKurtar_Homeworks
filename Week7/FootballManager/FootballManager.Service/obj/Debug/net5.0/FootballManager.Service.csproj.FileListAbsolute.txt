@@ -15,3 +15,5 @@ C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManage
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\ref\FootballManager.Service.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\obj\Debug\net5.0\FootballManager.Service.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Core.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Service\bin\Debug\net5.0\FootballManager.Core.pdb

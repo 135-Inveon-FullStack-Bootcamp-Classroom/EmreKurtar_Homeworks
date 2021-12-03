@@ -71,3 +71,5 @@ C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManage
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\obj\Debug\net5.0\FootballManager.API.genruntimeconfig.cache
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\FootballManager.Core.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\FootballManager.Core.pdb

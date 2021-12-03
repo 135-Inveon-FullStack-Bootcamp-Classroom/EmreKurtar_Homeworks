@@ -9,3 +9,4 @@ C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManage
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\ref\FootballManager.Entities.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Entities\obj\Debug\net5.0\FootballManager.Entities.csprojAssemblyReference.cache

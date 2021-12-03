@@ -9,7 +9,7 @@ namespace FootballManager.Entities.Base
     public class BaseEntity
     {
         public int Id { get; set; }
-        public DateTime CreateDate { get { return CreateDate; } set { CreateDate = DateTime.Now; } }
-        public DateTime UpdateDate { get; set; }
+        public DateTime CreatedDate => DateTime.Now;
+        public DateTime UpdatedDate { get; set; }
     }
 }

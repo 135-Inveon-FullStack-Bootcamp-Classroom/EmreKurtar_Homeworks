@@ -26,8 +26,8 @@ namespace FootballManager.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddMyServices();
             services.AddMyContext(Configuration);
+            services.AddMyServices();
             services.AddUnitOfWorkService();
             services.AddControllers();
         }

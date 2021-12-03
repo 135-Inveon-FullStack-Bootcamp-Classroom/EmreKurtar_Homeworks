@@ -16,3 +16,5 @@ C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManage
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Data\obj\Debug\net5.0\ref\FootballManager.Data.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Data\obj\Debug\net5.0\FootballManager.Data.pdb
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Data\obj\Debug\net5.0\FootballManager.Data.genruntimeconfig.cache
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Data\bin\Debug\net5.0\FootballManager.Core.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.Data\bin\Debug\net5.0\FootballManager.Core.pdb

@@ -15,16 +15,17 @@ namespace FootballManager.Service.Implementation
     {
 
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IRepository<Footballer> _repo;
 
         public FootballerService(IUnitOfWork unitofwork)
         {
             _unitOfWork = unitofwork;
+            _repo = _unitOfWork.GetRepository<Footballer>();
         }
 
-        public Task AddAsync(Footballer entity)
+        public async Task AddAsync(Footballer entity)
         {
-            IRepository<Footballer> repo = _unitOfWork.GetRepository<Footballer>();
-            repo.AddAsync(entity);
+             await _repo.AddAsync(entity);
         }
 
         public IQueryable<Footballer> Get(Expression<Func<Footballer, bool>> predicate)
@@ -34,7 +35,7 @@ namespace FootballManager.Service.Implementation
 
         public Task<IEnumerable<Footballer>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return _repo.GetAllAsync();
         }
 
         public void Remove(Footballer entity)

@@ -17,10 +17,12 @@ namespace FootballManager.Service.Infrastructure
 {
     public static class Initializer
     {
-        public static void AddMyContext(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddMyContext(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<FootballDbContext>(options =>
-               options.UseSqlServer(configuration.GetConnectionString("MyConn")));
+            services.AddDbContext<FootballDbContext>(
+                options =>
+               options.UseSqlServer(configuration.GetConnectionString("MyConn"),o => { o.MigrationsAssembly("FootballManager.Data"); }));
+            return services;
             
         }
 
@@ -29,10 +31,10 @@ namespace FootballManager.Service.Infrastructure
             Type type = typeof(IService);
             Assembly assembly = type.Assembly;
             Type[] typesInAssembly = assembly.GetTypes();
-            var interfaces = typesInAssembly.Where(x => x.IsAssignableFrom(x) && x.IsInterface && x != type);
+            var interfaces = typesInAssembly.Where(x => type.IsAssignableFrom(x) && x.IsInterface && x != type);
             foreach (var iFace in interfaces)
             {
-                var implementClass = typesInAssembly.Where(q => q.IsClass && q.IsAssignableFrom(q)).FirstOrDefault();
+                var implementClass = typesInAssembly.Where(q => q.IsClass && iFace.IsAssignableFrom(q)).FirstOrDefault();
                 if(implementClass != null)
                 {
                     services.AddTransient(iFace, implementClass);

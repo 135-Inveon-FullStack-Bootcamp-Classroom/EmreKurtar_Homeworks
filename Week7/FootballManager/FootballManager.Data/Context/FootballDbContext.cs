@@ -10,6 +10,7 @@ namespace FootballManager.Data.Context
 {
     public class FootballDbContext : DbContext
     {
+
         public FootballDbContext(DbContextOptions<FootballDbContext> options) : base(options)
         {
 

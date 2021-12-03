@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "FootballManager.Core/1.0.0": {
+        "dependencies": {
+          "FootballManager.Entities": "1.0.0"
+        },
         "runtime": {
           "FootballManager.Core.dll": {}
+        }
+      },
+      "FootballManager.Entities/1.0.0": {
+        "runtime": {
+          "FootballManager.Entities.dll": {}
         }
       }
     }
   },
   "libraries": {
     "FootballManager.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootballManager.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
