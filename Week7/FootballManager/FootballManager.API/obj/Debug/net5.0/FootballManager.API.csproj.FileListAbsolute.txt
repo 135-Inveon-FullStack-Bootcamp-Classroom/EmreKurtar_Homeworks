@@ -73,3 +73,5 @@ C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManage
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\FootballManager.Core.dll
 C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\FootballManager.Core.pdb
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Allthebest\Desktop\InveonHomeworks\Week7\FootballManager\FootballManager.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

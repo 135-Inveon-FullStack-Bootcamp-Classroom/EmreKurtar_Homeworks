@@ -14,7 +14,7 @@ namespace FootballManager.Data.UnitOfWork
     public class UnitOfWork : IUnitOfWork
     {
         private readonly FootballDbContext _context;
-        private Dictionary<Type, object> _repositories;
+        private Dictionary<Type, object> _repositories = new Dictionary<Type, object>();
 
         public UnitOfWork(FootballDbContext context)
         {

@@ -12,6 +12,7 @@ namespace FootballManager.Entities
         public ICollection<Position> Positions { get; set; }
         public Team Team { get; set; }
         public NationalTeam NationalTeam { get; set; }
+        public Manager Manager { get; set; }
 
 
     }

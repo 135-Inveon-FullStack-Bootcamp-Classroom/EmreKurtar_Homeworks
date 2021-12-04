@@ -26,6 +26,8 @@ namespace FootballManager.Service.Implementation
         public async Task AddAsync(Footballer entity)
         {
              await _repo.AddAsync(entity);
+             await _unitOfWork.CommitAsync();
+            Console.WriteLine(entity.CreatedDate);
         }
 
         public IQueryable<Footballer> Get(Expression<Func<Footballer, bool>> predicate)
@@ -50,7 +52,10 @@ namespace FootballManager.Service.Implementation
 
         public Footballer Update(Footballer entity)
         {
-            throw new NotImplementedException();
+            _repo.Update(entity);
+            _unitOfWork.Commit();
+            return entity;
+
         }
     }
 }
