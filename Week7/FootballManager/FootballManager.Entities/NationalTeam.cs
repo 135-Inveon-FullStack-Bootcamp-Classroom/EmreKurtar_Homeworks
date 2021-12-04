@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FootballManager.Entities
 {
-    public class NationalTeam : Team
+    public class NationalTeam : Coach
     {
         public string Nation { get; set; }
     }

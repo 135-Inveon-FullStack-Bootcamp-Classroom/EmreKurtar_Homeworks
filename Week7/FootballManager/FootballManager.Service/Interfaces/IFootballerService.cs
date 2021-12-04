@@ -13,7 +13,6 @@ namespace FootballManager.Service.Interfaces
         Task<IEnumerable<Footballer>> GetAllAsync();
         IQueryable<Footballer> Get(Expression<Func<Footballer, bool>> predicate);
         Task<Footballer> SingleOrDefaultAsync(Expression<Func<Footballer, bool>> predicate);
-
         Task AddAsync(Footballer entity);
         void Remove(Footballer entity);
         Footballer Update(Footballer entity);

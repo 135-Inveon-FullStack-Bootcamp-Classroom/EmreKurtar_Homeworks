@@ -24,6 +24,21 @@ namespace FootballManager.API.Controllers
             _mapper = mapper;
         }
 
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Footballer>>> GetFootballers()
+        {
+            IEnumerable<Footballer> footballer = await _footballerService.GetAllAsync();
+            return Ok(footballer);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Footballer> FindFootballer(int id)
+        {
+            var footballer = _footballerService.Get(x => x.Id == id).FirstOrDefault(); 
+            return Ok(footballer);
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddFootballer(AddFootballerDTO footballerdto)
         {
@@ -34,10 +49,25 @@ namespace FootballManager.API.Controllers
         [HttpPut]
         public IActionResult UpdateFootballer(UpdateFootballerDTO footballerdto)
         {
-
              _footballerService.Update(_mapper.Map<Footballer>(footballerdto));
             return Ok();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteFootballer(int id)
+        {
+            Footballer existFootballer = await _footballerService.SingleOrDefaultAsync(x => x.Id == id);
+            if(existFootballer != null)
+            {
+                _footballerService.Remove(existFootballer);
+                return NoContent();
+            }
+
+            return BadRequest();
+            
+        }
+
+
 
 
     }

@@ -11,46 +11,45 @@ using System.Threading.Tasks;
 
 namespace FootballManager.Service.Implementation
 {
-    public class FootballerService : IFootballerService
+    public class TacticService : ITacticService
     {
-
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IRepository<Footballer> _repo;
+        private readonly IRepository<Tactic> _repo;
 
-        public FootballerService(IUnitOfWork unitofwork)
+        public TacticService(IUnitOfWork unitofwork)
         {
             _unitOfWork = unitofwork;
-            _repo = _unitOfWork.GetRepository<Footballer>();
+            _repo = _unitOfWork.GetRepository<Tactic>();
         }
 
-        public async Task AddAsync(Footballer entity)
+        public async Task AddAsync(Tactic entity)
         {
-             await _repo.AddAsync(entity);
-             await _unitOfWork.CommitAsync();
+            await _repo.AddAsync(entity);
+            await _unitOfWork.CommitAsync();
         }
 
-        public IQueryable<Footballer> Get(Expression<Func<Footballer, bool>> predicate)
+        public IQueryable<Tactic> Get(Expression<Func<Tactic, bool>> predicate)
         {
             return _repo.Get(predicate);
         }
 
-        public async Task<IEnumerable<Footballer>> GetAllAsync()
+        public async Task<IEnumerable<Tactic>> GetAllAsync()
         {
             return await _repo.GetAllAsync();
         }
 
-        public void Remove(Footballer entity)
+        public void Remove(Tactic entity)
         {
             _repo.Remove(entity);
             _unitOfWork.Commit();
         }
 
-        public async Task<Footballer> SingleOrDefaultAsync(Expression<Func<Footballer, bool>> predicate)
+        public async Task<Tactic> SingleOrDefaultAsync(Expression<Func<Tactic, bool>> predicate)
         {
             return await _repo.SingleOrDefaultAsync(predicate);
         }
 
-        public Footballer Update(Footballer entity)
+        public Tactic Update(Tactic entity)
         {
             _repo.Update(entity);
             _unitOfWork.Commit();

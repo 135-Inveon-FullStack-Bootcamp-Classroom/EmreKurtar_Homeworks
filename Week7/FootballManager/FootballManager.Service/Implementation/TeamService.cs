@@ -11,46 +11,45 @@ using System.Threading.Tasks;
 
 namespace FootballManager.Service.Implementation
 {
-    public class FootballerService : IFootballerService
+    public class TeamService : ITeamService
     {
-
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IRepository<Footballer> _repo;
+        private readonly IRepository<Team> _repo;
 
-        public FootballerService(IUnitOfWork unitofwork)
+        public TeamService(IUnitOfWork unitofwork)
         {
             _unitOfWork = unitofwork;
-            _repo = _unitOfWork.GetRepository<Footballer>();
+            _repo = _unitOfWork.GetRepository<Team>();
         }
 
-        public async Task AddAsync(Footballer entity)
+        public async Task AddAsync(Team entity)
         {
-             await _repo.AddAsync(entity);
-             await _unitOfWork.CommitAsync();
+            await _repo.AddAsync(entity);
+            await _unitOfWork.CommitAsync();
         }
 
-        public IQueryable<Footballer> Get(Expression<Func<Footballer, bool>> predicate)
+        public IQueryable<Team> Get(Expression<Func<Team, bool>> predicate)
         {
             return _repo.Get(predicate);
         }
 
-        public async Task<IEnumerable<Footballer>> GetAllAsync()
+        public async Task<IEnumerable<Team>> GetAllAsync()
         {
             return await _repo.GetAllAsync();
         }
 
-        public void Remove(Footballer entity)
+        public void Remove(Team entity)
         {
             _repo.Remove(entity);
             _unitOfWork.Commit();
         }
 
-        public async Task<Footballer> SingleOrDefaultAsync(Expression<Func<Footballer, bool>> predicate)
+        public async Task<Team> SingleOrDefaultAsync(Expression<Func<Team, bool>> predicate)
         {
             return await _repo.SingleOrDefaultAsync(predicate);
         }
 
-        public Footballer Update(Footballer entity)
+        public Team Update(Team entity)
         {
             _repo.Update(entity);
             _unitOfWork.Commit();

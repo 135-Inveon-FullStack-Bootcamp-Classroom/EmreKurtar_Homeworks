@@ -11,46 +11,45 @@ using System.Threading.Tasks;
 
 namespace FootballManager.Service.Implementation
 {
-    public class FootballerService : IFootballerService
+    public class PositionService : IPositionService
     {
-
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IRepository<Footballer> _repo;
+        private readonly IRepository<Position> _repo;
 
-        public FootballerService(IUnitOfWork unitofwork)
+        public PositionService(IUnitOfWork unitofwork)
         {
             _unitOfWork = unitofwork;
-            _repo = _unitOfWork.GetRepository<Footballer>();
+            _repo = _unitOfWork.GetRepository<Position>();
         }
 
-        public async Task AddAsync(Footballer entity)
+        public async Task AddAsync(Position entity)
         {
-             await _repo.AddAsync(entity);
-             await _unitOfWork.CommitAsync();
+            await _repo.AddAsync(entity);
+            await _unitOfWork.CommitAsync();
         }
 
-        public IQueryable<Footballer> Get(Expression<Func<Footballer, bool>> predicate)
+        public IQueryable<Position> Get(Expression<Func<Position, bool>> predicate)
         {
             return _repo.Get(predicate);
         }
 
-        public async Task<IEnumerable<Footballer>> GetAllAsync()
+        public async Task<IEnumerable<Position>> GetAllAsync()
         {
             return await _repo.GetAllAsync();
         }
 
-        public void Remove(Footballer entity)
+        public void Remove(Position entity)
         {
             _repo.Remove(entity);
             _unitOfWork.Commit();
         }
 
-        public async Task<Footballer> SingleOrDefaultAsync(Expression<Func<Footballer, bool>> predicate)
+        public async Task<Position> SingleOrDefaultAsync(Expression<Func<Position, bool>> predicate)
         {
             return await _repo.SingleOrDefaultAsync(predicate);
         }
 
-        public Footballer Update(Footballer entity)
+        public Position Update(Position entity)
         {
             _repo.Update(entity);
             _unitOfWork.Commit();
